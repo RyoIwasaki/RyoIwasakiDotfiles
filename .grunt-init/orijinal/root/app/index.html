@@ -1,0 +1,47 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<title>{%= title %}</title>
+<meta name="description" content="{%= description %}">
+<meta name="keywords" content="ページキーワード">
+<meta property="og:title" content="SNSに投稿した時に表示させるページタイトルを記述して下さい。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="PC版のページURLを記述して下さい。">
+<meta property="og:image" content="SNSに投稿した時に表示させるサムネイル画像のファイルパスを記述して下さい。">
+<meta property="og:description" content="{%= description %}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="TwitterCardsに出力するURLを記述して下さい。">
+<meta name="twitter:title" content="TwitterCardsに出力するページタイトルを記述して下さい。">
+<meta name="twitter:description" content="{%= description %}" >
+<meta name="twitter:image" content="TwitterCardsに出力する画像パスを記述して下さい。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="./images/icon.png">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+(function(_win){
+var ua = _win.navigator.userAgent.toLowerCase();
+if((ua.indexOf('iphone') > -1 && ua.indexOf('ipad') < 0) || ua.indexOf('ipod') > -1 || ua.indexOf('android') > -1){
+_win.location.href = '';
+}
+})(window);
+</script>
+<!-- bower:css -->
+<!-- endbower -->
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<h1>{%= title %}</h1>
+<h2>{%= description %}</h2>
+<!-- bower:js -->
+<!-- endbower -->
+<script src="scripts/main.js"></script>
+</body>
+</html>
